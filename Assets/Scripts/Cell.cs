@@ -12,7 +12,7 @@ public class Cell : MonoBehaviour
 
     public void SetItem(Item item)
     {
-        image.sprite = Resources.Load<Sprite>(item.imageFileName);
+        //image.sprite = Resources.Load<Sprite>(item.imageFileName);
         titleText.text = item.title;
         subtitleText.text = item.subtitle;
     }
