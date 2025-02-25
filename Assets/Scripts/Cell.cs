@@ -10,10 +10,14 @@ public class Cell : MonoBehaviour
     [SerializeField] private TMP_Text titleText;
     [SerializeField] private TMP_Text subtitleText;
 
-    public void SetItem(Item item)
+    public int Index { get; private set; }
+
+    public void SetItem(Item item, int index)
     {
         //image.sprite = Resources.Load<Sprite>(item.imageFileName);
         titleText.text = item.title;
         subtitleText.text = item.subtitle;
+
+        Index = index;
     }
 }
